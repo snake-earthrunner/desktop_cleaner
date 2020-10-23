@@ -65,11 +65,7 @@ for path, folders, files in os.walk(folder_destination):
     for file in files:
         file_list_destination.append(file)
 
-"""#TRACKING-loop that extracts all files recursively from path = folder_to_track and adds the files to the above empty placeholder list
-for path, folders, files in os.walk(folder_to_track):
-    for file in files:
-        file_list_tracking.append(file)    
-print(file_list_tracking)"""
+
         
 #Compares the two file lists generated (file_list_tracking, file_list_destination) and stores unique files in placeholder list (file_list_food)
 #This lines of codes thus make sure no file that already exists in the destination_folder is replaced (or worse) during the final action which is the relocation of the fiules from tracking folder to destination folder...
